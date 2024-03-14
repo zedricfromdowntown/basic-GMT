@@ -124,7 +124,8 @@
 }
   /* header */
   .header{
-    background:var(--dark);
+    background:transparent;
+    padding:2rem ;
     position: relative;
     position: fixed;
     width:100%;
@@ -247,41 +248,18 @@ font-size:3rem;
   transition:.5s ease;
 }
 
- 
 
- 
-
-
-
-
-
-
+.banner{
+  background-image:url("/img/banner_home_v1.jpg");
+  background-size:cover;
+  height:100vh;
+  background-position:center center;
+}
 
 
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /*repeatable pattern*/
-  :root{
-    --light:#ffffff;
-    --dark:#2b2b2b;
-    --primary:#134A8C;
+/*repeatable pattern*/
+:root{
+--light:#ffffff;
+--dark:#2b2b2b;
+--primary:#134A8C;
 }
