@@ -340,11 +340,11 @@ gap:2rem ;
   width:80% ;
 }
 .banner_text ul.social{
-  justify-content:center ;
+  justify-content:center;
 }
 .banner_faq{
   width:100% ;
-  border-top-left-radius:0rem ;
+  border-top-left-radius:0rem;
   text-align: center;
 }
 .banner_faq a{
@@ -352,68 +352,69 @@ gap:2rem ;
 }
 
 /*offer sec*/
-.offer{
-background:var(--grey) ;
-display:inline-block ;
+@media screen and (max-width: 500px){
+  .how_wrapper{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    max-width:100;
+    margin:12rem;
+    gap:1.5rem;
+  }
+  }
 
-height:70vh ;
-
-
-}
-.offer__text h2{
-  font-size:3rem ;
-  font-weight: 900;
-  text-align:center ;
-  color:var(--primary)
-
-}
-.offer__text p{
-  font-size:1rem ;
-  font-weight: 800;
-  text-align:center ;
-  color:var(--dark);
-  gap:100px ;
-  margin:2rem;
-}
-.offer__text h3{
-  font-size:10rem ;
-  font-weight: -1;
-  text-align:center ;
-  color:var(--primary)
-}
-
-
-.btn.offer__text{
-  display:inline-block;
   
-  padding: 1rem 1.5rem ;
-  border-radius:-5rem ;
-  border:1px solid transparent ;
-  transition:.5s ease ;
-  text-align:top center ;
-  top:100;
-  
-}
-.offer{
-  background-size:cover;
-  height:60vh;
-  background-position:center center;
-  position:relative ;
-  display: flex;
-  align-items:center;
-}
-.offer{
-  background:var(--light) ;
-  width:fit-content ;
-  padding:1.5rem 2rem ;
-  position:absolute ;
-  
-}
 
-.offer__btn {
-  margin: -300px; /* Apply 110px margin to all sides */
-  padding: 100px; /* Apply 110px padding to all sides */
+
+
+
+/*HOW*/
+
+.how{
+  background:var(--primary);
+
 }
+.how__wrapper{
+  display:grid;
+  grid-template-columns:2fr 2fr;
+  min-height:500px;
+}
+.how__ate{
+  background-image:url("img/different_img.jpg") ;
+  background-size:cover ;
+  background-position:center center ;
+  height:100%;
+}
+.how_text{
+  display:flex ;
+  align-items: center;
+  justify-content:center ;
+  
+  flex-direction:column ;
+  gap:2rem;
+  max-width:75rem ;
+  margin:0 auto;
+}
+.how__text h2{
+  color:var(--light);
+font-size:4rem;
+font-weight:600 ;
+}
+.how__text p{
+  color:var(--light)
+}
+@media screen and (max-width: 500px){
+  .how__wrapper{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    max-width:100;
+    margin:12rem;
+    gap:1.5rem;
+  }
+  }
 /*repeatable pattern*/
 :root{
 --light:#ffffff;
@@ -422,12 +423,11 @@ height:70vh ;
 }
 .btn{
   display:inline-block;
-  
-  padding:.1rem 1.5rem ;
+  padding:.5rem 1.5rem ;
   border-radius:5rem ;
   border:1px solid transparent ;
   transition:.5s ease ;
-  text-align:center center ;
+  text-align:center ;
 
 }
 .btn:hover{
