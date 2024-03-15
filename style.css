@@ -351,6 +351,69 @@ gap:2rem ;
   justify-content: center;
 }
 
+/*offer sec*/
+.offer{
+background:var(--grey) ;
+display:inline-block ;
+
+height:70vh ;
+
+
+}
+.offer__text h2{
+  font-size:3rem ;
+  font-weight: 900;
+  text-align:center ;
+  color:var(--primary)
+
+}
+.offer__text p{
+  font-size:1rem ;
+  font-weight: 800;
+  text-align:center ;
+  color:var(--dark);
+  gap:100px ;
+  margin:2rem;
+}
+.offer__text h3{
+  font-size:10rem ;
+  font-weight: -1;
+  text-align:center ;
+  color:var(--primary)
+}
+
+
+.btn.offer__text{
+  display:inline-block;
+  
+  padding: 1rem 1.5rem ;
+  border-radius:-5rem ;
+  border:1px solid transparent ;
+  transition:.5s ease ;
+  text-align:top center ;
+  top:100;
+  
+}
+.offer{
+  background-size:cover;
+  height:60vh;
+  background-position:center center;
+  position:relative ;
+  display: flex;
+  align-items:center;
+}
+.offer{
+  background:var(--light) ;
+  width:fit-content ;
+  padding:1.5rem 2rem ;
+  position:absolute ;
+  
+}
+
+.offer__btn {
+  margin: -300px; /* Apply 110px margin to all sides */
+  padding: 100px; /* Apply 110px padding to all sides */
+}
 /*repeatable pattern*/
 :root{
 --light:#ffffff;
@@ -360,11 +423,12 @@ gap:2rem ;
 .btn{
   display:inline-block;
   
-  padding:.5rem 1.5rem ;
+  padding:.1rem 1.5rem ;
   border-radius:5rem ;
   border:1px solid transparent ;
   transition:.5s ease ;
-  text-align:center ;
+  text-align:center center ;
+
 }
 .btn:hover{
   scale:1.1;
